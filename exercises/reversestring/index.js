@@ -5,11 +5,9 @@
 //   reverse('apple') === 'leppa'
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
-
+let str = "guy";
 function reverse(str) {
-  return str.split("").reduce((a, b) => {
-    return b + a;
-  }, "");
+  return str.split("").reduce((a, b) => b + a, "");
 }
 module.exports = reverse;
 // function reverse(str) {
@@ -29,7 +27,7 @@ module.exports = reverse;
 // return newString;
 // }
 
-return str.split("").reduce((a, b) => {
-  return b + a;
-}, "");
-}
+// return str.split("").reduce((a, b) => {
+//   return b + a;
+// }, "");
+// }
